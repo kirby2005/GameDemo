@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{FAF26DAF-4E90-AB1D-E3A9-DEAC512B1AA4}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "GameDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

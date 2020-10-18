@@ -37,7 +37,8 @@ void UMyGameInstance::Init()
 	state.setLoadFileDelegate([](const char* fn, FString& filepath)->TArray<uint8> {
 
 		IPlatformFile& PlatformFile = FPlatformFileManager::Get().GetPlatformFile();
-		FString path = FPaths::ProjectContentDir();
+		FString path = FPaths::ProjectDir();
+		path /= "Output";
 		FString filename = UTF8_TO_TCHAR(fn);
 		path /= "Lua";
 		path /= filename.Replace(TEXT("."), TEXT("/"));
